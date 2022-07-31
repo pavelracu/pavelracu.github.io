@@ -1,0 +1,62 @@
+body {
+    font-family: 'DM Sans', sans-serif;
+    color: #212834;
+    background: #f5f5f5;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+}
+
+a {
+    color: #2d7788;
+    text-decoration: none;
+}
+
+.sidebar-wrapper {
+    width: 350px;
+    left: 0;
+    background: #212834;
+    color: #fff;
+    min-height: 800px;
+    padding-left: 30px;
+}
+
+.skills-container {
+}
+
+.contact-info {
+    font-size: 16px;
+    display: flex;
+    padding-top: 10px;
+}
+
+.icon-spacing {
+    margin-right: 30px;
+}
+
+hr {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.chip {
+    font-size: 16px;
+    /* Center the content */
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    /* Background color */
+    background-color: #fff;
+    color: #212834;
+
+    /* Rounded border */
+    border-radius: 9999px;
+
+    /* Spacing */
+    padding: 8px 16px;
+    margin: 8px 4px;
+}
