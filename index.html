@@ -14,17 +14,16 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
   <!-- FontAwesome JS-->
   <script src="https://kit.fontawesome.com/7439d5b11b.js" crossorigin="anonymous"></script>
-  <link id="theme-style" rel="stylesheet" href="style.css">
+  <link id="theme-style" rel="stylesheet" href="new-style.css">
 </head>
 
 <body>
-<div class="wrapper mt-lg-5">
-  <div class="profile-picture">
-    <img src="img/profile.jpeg" alt="">
-  </div>
+<div class="wrapper">
   <div class="sidebar-wrapper">
+    <div class="profile-picture">
+      <img src="img/profile.jpeg" alt="">
+    </div>
     <div class="contact-container">
-      <img src="" alt="">
       <h1>CONTACT</h1>
       <div class="contact-info"><span class="material-symbols-outlined icon-spacing">call</span>+351 967587460</div>
       <div class="contact-info"><span class="material-symbols-outlined icon-spacing">email</span><a
@@ -37,149 +36,181 @@
       <h1>SKILLS</h1>
       <div class="chip">Java 8</div>
       <div class="chip">Java EE 8</div>
+      <div class="chip">Azure</div>
       <div class="chip">JavaScript</div>
       <div class="chip">Python 3.9</div>
       <div class="chip">Dart</div>
       <div class="chip">MySQL</div>
+      <div class="chip">Git</div>
       <div class="chip">PostgresSQL</div>
       <div class="chip">Spring Framework</div>
       <div class="chip">Firebase</div>
       <div class="chip">Angular</div>
       <div class="chip">Flutter</div>
-      <div class="chip">Azure</div>
       <div class="chip">GCloud</div>
-      <div class="chip">Git</div>
+    </div>
+    <hr>
+    <div class="personal-projects-container">
+      <h1>PERSONAL PROJECTS</h1>
+      <div class="item">
+        <div class="project-title">Receita de Hoje</div>
+        <div class="project-tagline">Android app that would suggest a random recipe every day. <br>Build with Flutter and connected to a Firebase backend.</div>
+      </div>
+      <br>
+      <div class="item">
+        <div class="project-title">Sentiment Analysis in video calls</div>
+        <div class="project-tagline">Assistant that will join in your video calls and will analyse the reactions of all participants and allows you to better feel the room.
+          <br>
+          Built in javascript and connected to a python backend. Using OpenCV computer vision capabilities coupled with an AI Model to extract the faces and analyse the sentiment.
+          <br>
+          After the call the user can further analyse the call by uploading the video to the dashboard.
+        </div>
+      </div>
     </div>
   </div>
-  <!--  <div class="main-wrapper">-->
+  <div class="main-wrapper">
+    <section class="hero">
+      <h1>PAVEL RACU</h1>
+      <h2>Backend Engineer. Scrum Enthusiast</h2>
+      <div class="description">
+        <p>I had my first contact with programming while I was in Civil Engineering course where I learned Pascal. In
+          April 2016 I enrolled in the Academia de Codigo's Programming Bootcamp where I learned the fundamental
+          object-oriented programming concepts using Java. Since then, I worked as a C++ and Java software engineer
+          mainly focusing on the backend part of the applications. I am currently leading a team of 11 developers as
+          their scrum master and tech lead. I enjoy helping others to grow, and have given several training sessions on
+          git, scrum, java and microservice architecture. My hobbies include playing for a live audience, building
+          guitar effect pedals and amplifiers and playing chess.</p>
+      </div>
+    </section>
+    <section class="experience">
+      <h2>Work Experience</h2>
+      <div class="experience-item">
+        <div class="meta">
+          <div class="upper-row">
+            <h3 class="job-title">Backend Engineer</h3>
+            <div class="time">Jan 2022 - Jul 2022</div>
+          </div><!--//upper-row-->
+          <div class="company">Potential Project, Remote</div>
+        </div>
+        <div class="experience-details">
+          <p>I had my first contact with programming while I was in Civil Engineering course where I learned Pascal. In
+            April 2016 I enrolled in the Academia de Codigo's Programming Bootcamp where I learned the fundamental
+            object-oriented programming concepts using Java. Since then, I worked as a C++ and Java software engineer
+            mainly focusing on the backend part of the applications.</p>
+          <div class="skills-container">
+            <div class="chip">JavaScript</div>
+            <div class="chip">Angular</div>
+            <div class="chip">Firebase</div>
+            <div class="chip">Bitbucket Pipelines</div>
+          </div>
+        </div>
+      </div>
+      <div class="experience-item">
+        <div class="meta">
+          <div class="upper-row">
+            <h3 class="job-title">Scrum Master</h3>
+            <div class="time">Dec 2020 - Jan 2021</div>
+          </div><!--//upper-row-->
+          <div class="company">Critical Techworks, Lisbon</div>
+        </div>
+        <div class="experience-details">
+          <p>Took over the scrum master role leading a team of 11 developers. Took over the azure pilot migration plan
+            for the application making the connection between the stakeholders and the dev team. Defined a training plan
+            so that everyone is prepared to support the application after the migration to azure is concluded.</p>
+          <div class="skills-container">
+            <div class="chip">Azure</div>
+            <div class="chip">Scrum</div>
+            <div class="chip">Java EE</div>
+            <div class="chip">Jenkins</div>
+            <div class="chip">Angular</div>
+          </div>
+        </div>
+      </div>
+      <div class="experience-item">
+        <div class="meta">
+          <div class="upper-row">
+            <h3 class="job-title">Software engineer</h3>
+            <div class="time">Jan 2020 - Dec 2020</div>
+          </div><!--//upper-row-->
+          <div class="company">Critical Techworks</div>
+        </div>
+        <div class="experience-details">
+          <p>Worked with the Scrum Master to create a plan for the migration of the backend towards a microservice
+            architecture. Improved the local development environment to better reflect the production microservice
+            architecture. Worked closely with the team to define a backend coding standard. Trained the team on git and
+            implemented a new git workflow.</p>
+          <div class="skills-container">
+            <div class="chip">Java EE</div>
+            <div class="chip">Jenkins</div>
+            <div class="chip">PostgresSQL</div>
+          </div>
+        </div>
+      </div>
+      <div class="experience-item">
 
-  <!--    <section class="section summary-section">-->
-  <!--      <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-user"></i></span>Career Profile</h2>-->
-  <!--      <div class="summary">-->
-  <!--        <p>Summarise your career here lorem ipsum dolor sit amet, consectetuer adipiscing elit. You can <a href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/orbit-free-resume-cv-bootstrap-theme-for-developers/" target="_blank">download this free resume/CV template here</a>. Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu.</p>-->
-  <!--      </div>&lt;!&ndash;//summary&ndash;&gt;-->
-  <!--    </section>&lt;!&ndash;//section&ndash;&gt;-->
+        <div class="meta">
+          <div class="upper-row">
+            <h3 class="job-title">Java Consultant</h3>
+            <div class="time">Jul 2018 - Jan 2020</div>
+          </div><!--//upper-row-->
+          <div class="company">District Tech, Lisbon</div>
+        </div>
+        <div class="experience-details">
+          <p>Worked closely with the team to design and implement the backend api according to the OpenAPI
+            Specification.
+            Developed a plan to migrate the Java Backend to a microservice architecture.
+            Improved the continuous integration and deployment of the backend and reduced the deployment time in 70%.
+            Introduced coding
+            standards for the java backend. Developed a team skill improvement plan and gave the necessary trainings to
+            all team members.
+          </p>
+          <div class="skills-container">
+            <div class="chip">Java</div>
+            <div class="chip">React</div>
+            <div class="chip">MySQL</div>
+            <div class="chip">CircleCI</div>
+          </div>
+        </div>
+      </div>
+      <div class="experience-item">
+        <div class="meta">
+          <div class="upper-row">
+            <h3 class="job-title">C++ Consultant </h3>
+            <div class="time">Apr 2017 - Jun 2018</div>
+          </div><!--//upper-row-->
+          <div class="company">Natixis, Porto</div>
+        </div>
+        <div class="experience-details">
+          <p>Developed software for the Summit Bonds Back Support team using Summit FT API (C++) and sh/ksh scripts.
+            Monitored Jobs and manage errors related to the Summit Bonds CTM Workload Automation module and responding
+            to SUMMIT FT user requests.</p>
+          <div class="skills-container">
+            <div class="chip">C++</div>
+            <div class="chip">ksh/sh</div>
+            <div class="chip">Oracle DB</div>
+          </div>
+        </div>
+      </div>
+      <div class="experience-item">
+        <div class="meta">
+          <div class="upper-row">
+            <h3 class="job-title">C++ Embedded Systems Developer</h3>
+            <div class="time">Sep 2016 - Apr 2017</div>
+          </div><!--//upper-row-->
+          <div class="company">Altran, Fundão</div>
+        </div>
+        <div class="experience-details">
+          <p>Implemented the connection of the Hands-Free Parking user interface module to the middle-ware of the car
+            plus the navigation from the main screen to the hands-free parking screen(s).</p>
+          <div class="skills-container">
+            <div class="chip">C++</div>
+            <div class="chip">git</div>
+          </div>
+        </div>
+      </div>
 
-  <!--    <section class="section experiences-section">-->
-  <!--      <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-briefcase"></i></span>Experiences</h2>-->
-
-  <!--      <div class="item">-->
-  <!--        <div class="meta">-->
-  <!--          <div class="upper-row">-->
-  <!--            <h3 class="job-title">Lead Developer</h3>-->
-  <!--            <div class="time">2022 - Present</div>-->
-  <!--          </div>&lt;!&ndash;//upper-row&ndash;&gt;-->
-  <!--          <div class="company">Startup Hubs, San Francisco</div>-->
-  <!--        </div>&lt;!&ndash;//meta&ndash;&gt;-->
-  <!--        <div class="details">-->
-  <!--          <p>Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.</p>-->
-  <!--          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>-->
-  <!--        </div>&lt;!&ndash;//details&ndash;&gt;-->
-  <!--      </div>&lt;!&ndash;//item&ndash;&gt;-->
-
-  <!--      <div class="item">-->
-  <!--        <div class="meta">-->
-  <!--          <div class="upper-row">-->
-  <!--            <h3 class="job-title">Senior Software Engineer</h3>-->
-  <!--            <div class="time">2018 - 2022</div>-->
-  <!--          </div>&lt;!&ndash;//upper-row&ndash;&gt;-->
-  <!--          <div class="company">Google, London</div>-->
-  <!--        </div>&lt;!&ndash;//meta&ndash;&gt;-->
-  <!--        <div class="details">-->
-  <!--          <p>Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>-->
-
-  <!--        </div>&lt;!&ndash;//details&ndash;&gt;-->
-  <!--      </div>&lt;!&ndash;//item&ndash;&gt;-->
-
-  <!--      <div class="item">-->
-  <!--        <div class="meta">-->
-  <!--          <div class="upper-row">-->
-  <!--            <h3 class="job-title">UI Developer</h3>-->
-  <!--            <div class="time">2016 - 2018</div>-->
-  <!--          </div>&lt;!&ndash;//upper-row&ndash;&gt;-->
-  <!--          <div class="company">Amazon, London</div>-->
-  <!--        </div>&lt;!&ndash;//meta&ndash;&gt;-->
-  <!--        <div class="details">-->
-  <!--          <p>Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>-->
-  <!--        </div>&lt;!&ndash;//details&ndash;&gt;-->
-  <!--      </div>&lt;!&ndash;//item&ndash;&gt;-->
-
-  <!--    </section>&lt;!&ndash;//section&ndash;&gt;-->
-
-  <!--    <section class="section projects-section">-->
-  <!--      <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-archive"></i></span>Projects</h2>-->
-  <!--      <div class="intro">-->
-  <!--        <p>You can list your side projects or open source libraries in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.</p>-->
-  <!--      </div>&lt;!&ndash;//intro&ndash;&gt;-->
-  <!--      <div class="item">-->
-  <!--        <span class="project-title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderpro-bootstrap-5-startup-template-for-software-projects/" target="_blank">CoderPro</a></span> - <span class="project-tagline">A responsive website template designed to help developers launch their software projects. </span>-->
-
-  <!--      </div>&lt;!&ndash;//item&ndash;&gt;-->
-  <!--      <div class="item">-->
-  <!--        <span class="project-title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/launch-bootstrap-5-template-for-saas-businesses/" target="_blank">Launch</a></span> - <span class="project-tagline">A responsive website template designed to help startups promote their products or services.</span>-->
-  <!--      </div>&lt;!&ndash;//item&ndash;&gt;-->
-  <!--      <div class="item">-->
-  <!--        <span class="project-title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/devcard-bootstrap-5-vcard-portfolio-template-for-software-developers/" target="_blank">DevCard</a></span> - <span class="project-tagline">A portfolio website template designed for software developers.</span>-->
-  <!--      </div>&lt;!&ndash;//item&ndash;&gt;-->
-  <!--      <div class="item">-->
-  <!--        <span class="project-title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/bootstrap-template-for-mobile-apps-nova-pro/" target="_blank">Nova Pro</a></span> - <span class="project-tagline">A responsive Bootstrap theme designed to help app developers promote their mobile apps</span>-->
-  <!--      </div>&lt;!&ndash;//item&ndash;&gt;-->
-  <!--      <div class="item">-->
-  <!--        <span class="project-title"><a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-web-development-agencies-devstudio/" target="_blank">DevStudio</a></span> - -->
-  <!--        <span class="project-tagline">A responsive website template designed to help web developers/designers market their services. </span>-->
-  <!--      </div>&lt;!&ndash;//item&ndash;&gt;-->
-  <!--    </section>&lt;!&ndash;//section&ndash;&gt;-->
-
-  <!--    <section class="skills-section section">-->
-  <!--      <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-rocket"></i></span>Skills &amp; Proficiency</h2>-->
-  <!--      <div class="skillset">-->
-  <!--        <div class="item">-->
-  <!--          <h3 class="level-title">Python &amp; Django</h3>-->
-  <!--          <div class="progress level-bar">-->
-  <!--            <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 99%" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>-->
-  <!--          </div>-->
-  <!--        </div>&lt;!&ndash;//item&ndash;&gt;-->
-
-  <!--        <div class="item">-->
-  <!--          <h3 class="level-title">Javascript</h3>-->
-  <!--          <div class="progress level-bar">-->
-  <!--            <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 98%" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>-->
-  <!--          </div>-->
-  <!--        </div>&lt;!&ndash;//item&ndash;&gt;-->
-
-  <!--        <div class="item">-->
-  <!--          <h3 class="level-title">React &amp; Angular</h3>-->
-  <!--          <div class="progress level-bar">-->
-  <!--            <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 98%" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>-->
-  <!--          </div>-->
-  <!--        </div>&lt;!&ndash;//item&ndash;&gt;-->
-
-  <!--        <div class="item">-->
-  <!--          <h3 class="level-title">HTML5 &amp; CSS</h3>-->
-  <!--          <div class="progress level-bar">-->
-  <!--            <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>-->
-  <!--          </div>-->
-  <!--        </div>&lt;!&ndash;//item&ndash;&gt;-->
-
-  <!--        <div class="item">-->
-  <!--          <h3 class="level-title">Ruby on Rails</h3>-->
-  <!--          <div class="progress level-bar">-->
-  <!--            <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>-->
-  <!--          </div>-->
-  <!--        </div>&lt;!&ndash;//item&ndash;&gt;-->
-
-  <!--        <div class="item">-->
-  <!--          <h3 class="level-title">Sketch &amp; Photoshop</h3>-->
-  <!--          <div class="progress level-bar">-->
-  <!--            <div class="progress-bar theme-progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>-->
-  <!--          </div>-->
-  <!--        </div>&lt;!&ndash;//item&ndash;&gt;-->
-
-  <!--      </div>-->
-  <!--    </section>&lt;!&ndash;//skills-section&ndash;&gt;-->
-
-  <!--  </div>&lt;!&ndash;//main-body&ndash;&gt;-->
-
+    </section>
+  </div>
 </div>
 
 </body>
