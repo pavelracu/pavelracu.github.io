@@ -14,7 +14,426 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
   <!-- FontAwesome JS-->
   <script src="https://kit.fontawesome.com/7439d5b11b.js" crossorigin="anonymous"></script>
-  <link id="theme-style" rel="stylesheet" href="new-style.css">
+  <!--  <link id="theme-style" rel="stylesheet" href="new-style.css">-->
+  <style>
+      body {
+          font-family: 'Roboto', sans-serif;
+          color: #545E6C;
+          background: #f5f5f5;
+          font-size: 14px;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+          font-weight: 700;
+      }
+
+      a {
+          color: #2d7788;
+          text-decoration: none;
+      }
+
+      a:hover {
+          text-decoration: underline;
+          color: #10171a;
+          -webkit-transition: all 0.4s ease-in-out;
+          -moz-transition: all 0.4s ease-in-out;
+          -ms-transition: all 0.4s ease-in-out;
+          -o-transition: all 0.4s ease-in-out;
+      }
+
+      a:focus {
+          text-decoration: none;
+      }
+
+      p {
+          line-height: 1.5;
+      }
+
+      hr {
+          margin-top: 40px;
+          margin-bottom: 30px;
+          margin-left: 30px;
+      }
+
+      .wrapper {
+          background: #4B6A78;
+          max-width: 960px;
+          margin: 0 auto;
+          margin-top: 30px;
+          position: relative;
+          -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+          -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .sidebar-wrapper {
+          background: #212834;
+          position: absolute;
+          right: 0;
+          width: 300px;
+          height: 100%;
+          min-height: 800px;
+          color: #fff;
+      }
+
+
+      .contact-container {
+          padding-left: 30px;
+      }
+
+      .profile-picture img {
+          height: 280px;
+          width: 300px;
+          vertical-align: middle;
+          object-fit: cover;
+      }
+
+      .contact-info {
+          font-size: 14px;
+          display: flex;
+          padding-top: 10px;
+      }
+
+      .icon-spacing {
+          margin-right: 15px;
+      }
+
+      .sidebar-wrapper a {
+          color: #fff;
+      }
+
+      .sidebar-wrapper .profile-container {
+          padding: 30px;
+          background: rgba(0, 0, 0, 0.2);
+          text-align: center;
+          color: #fff;
+      }
+
+      .sidebar-wrapper .name {
+          font-size: 32px;
+          font-weight: 900;
+          margin-top: 0;
+          margin-bottom: 10px;
+      }
+
+      .sidebar-wrapper .tagline {
+          color: rgba(255, 255, 255, 0.6);
+          font-size: 16px;
+          font-weight: 400;
+          margin-top: 0;
+          margin-bottom: 0;
+      }
+
+      .sidebar-wrapper .profile {
+          margin-bottom: 15px;
+      }
+
+      .sidebar-wrapper .contact-list .svg-inline--fa {
+          margin-right: 5px;
+          font-size: 18px;
+          vertical-align: middle;
+      }
+
+      .sidebar-wrapper .contact-list li {
+          margin-bottom: 15px;
+      }
+
+      .sidebar-wrapper .contact-list li:last-child {
+          margin-bottom: 0;
+      }
+
+      .sidebar-wrapper .contact-list .email .svg-inline--fa {
+          font-size: 14px;
+      }
+
+      .sidebar-wrapper .container-block {
+          padding: 30px;
+      }
+
+      .sidebar-wrapper .container-block-title {
+          text-transform: uppercase;
+          font-size: 16px;
+          font-weight: 700;
+          margin-top: 0;
+          margin-bottom: 15px;
+      }
+
+      .sidebar-wrapper .degree {
+          font-size: 14px;
+          margin-top: 0;
+          margin-bottom: 5px;
+      }
+
+      .sidebar-wrapper .education-container .item {
+          margin-bottom: 15px;
+      }
+
+      .sidebar-wrapper .education-container .item:last-child {
+          margin-bottom: 0;
+      }
+
+      .sidebar-wrapper .education-container .meta {
+          color: rgba(255, 255, 255, 0.6);
+          font-weight: 500;
+          margin-bottom: 0px;
+          margin-top: 0;
+          font-size: 14px;
+      }
+
+      .sidebar-wrapper .education-container .time {
+          color: rgba(255, 255, 255, 0.6);
+          font-weight: 500;
+          margin-bottom: 0px;
+      }
+
+      .sidebar-wrapper .languages-container .lang-desc {
+          color: rgba(255, 255, 255, 0.6);
+      }
+
+      .sidebar-wrapper .languages-list {
+          margin-bottom: 0;
+      }
+
+      .sidebar-wrapper .languages-list li {
+          margin-bottom: 10px;
+      }
+
+      .sidebar-wrapper .languages-list li:last-child {
+          margin-bottom: 0;
+      }
+
+      .sidebar-wrapper .interests-list {
+          margin-bottom: 0;
+      }
+
+      .sidebar-wrapper .interests-list li {
+          margin-bottom: 10px;
+      }
+
+      .sidebar-wrapper .interests-list li:last-child {
+          margin-bottom: 0;
+      }
+
+      .main-wrapper {
+          background: #fff;
+          padding: 60px;
+          padding-right: 350px;
+      }
+
+      .skills-container {
+          padding-left: 30px;
+          padding-right: 15px;
+      }
+
+      .personal-projects-container {
+          padding-left: 30px;
+          padding-right: 15px;
+
+      }
+
+      .experience-details .skills-container {
+          padding-left: unset;
+          margin-top: -10px;
+      }
+
+      .experience-details .skills-container .chip {
+          font-family: "DejaVu Sans Mono", serif;
+          font-size: 10px;
+          padding: 4px 8px;
+          background-color: #212834;
+          color: white;
+          margin-bottom: 20px;
+      }
+
+      .chip {
+          font-family: "DejaVu Sans Mono", serif;
+          font-size: 10px;
+          /* Center the content */
+          align-items: center;
+          display: inline-flex;
+          justify-content: center;
+          /* Background color */
+          background-color: #fff;
+          color: #212834;
+
+          /* Rounded border */
+          border-radius: 9999px;
+
+          /* Spacing */
+          padding: 4px 16px;
+          margin: 4px 4px;
+      }
+
+      .main-wrapper .section-title {
+          text-transform: uppercase;
+          font-size: 20px;
+          font-weight: 500;
+          color: #2e4049;
+          position: relative;
+          margin-top: 0;
+          margin-bottom: 20px;
+      }
+
+      .main-wrapper .section-title .icon-holder {
+          width: 30px;
+          height: 30px;
+          margin-right: 8px;
+          display: inline-block;
+          color: #fff;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+          border-radius: 50%;
+          -moz-background-clip: padding;
+          -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+          background: #2e4049;
+          text-align: center;
+          font-size: 16px;
+          position: relative;
+          top: -8px;
+      }
+
+      .main-wrapper .section-title .icon-holder .svg-inline--fa {
+          font-size: 14px;
+          margin-top: 6px;
+      }
+
+      .main-wrapper .section {
+          margin-bottom: 60px;
+      }
+
+      .experience-item {
+          margin-bottom: 30px;
+      }
+
+      .main-wrapper .upper-row {
+          position: relative;
+          overflow: hidden;
+          margin-bottom: 2px;
+      }
+
+      .main-wrapper .job-title {
+          color: #3F4650;
+          font-size: 16px;
+          margin-top: 0;
+          margin-bottom: 0;
+          font-weight: 500;
+      }
+
+      .main-wrapper .time {
+          position: absolute;
+          right: 0;
+          top: 0;
+          color: #97AAC3;
+      }
+
+      .main-wrapper .company {
+          margin-bottom: 10px;
+          color: #97AAC3;
+      }
+
+      .project-title {
+          font-size: 16px;
+          font-weight: 700;
+          margin-top: 0;
+          margin-bottom: 15px;
+      }
+
+      .project-tagline {
+          line-height: 1.5;
+          color: rgba(255, 255, 255, 0.6);
+          font-size: 14px;
+          font-weight: 400;
+          margin-top: 0;
+          margin-bottom: 0;
+      }
+
+      .main-wrapper .projects-section .intro {
+          margin-bottom: 30px;
+      }
+
+      .main-wrapper .projects-section .item {
+          margin-bottom: 15px;
+      }
+
+      .skillset .item {
+          margin-bottom: 15px;
+          overflow: hidden;
+      }
+
+      .skillset .level-title {
+          font-size: 14px;
+          margin-top: 0;
+          margin-bottom: 12px;
+      }
+
+      .skillset .level-bar {
+          height: 12px;
+          background: #f5f5f5;
+          -webkit-border-radius: 2px;
+          -moz-border-radius: 2px;
+          -ms-border-radius: 2px;
+          -o-border-radius: 2px;
+          border-radius: 2px;
+          -moz-background-clip: padding;
+          -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+      }
+
+      .skillset .theme-progress-bar {
+          background: #5f8697;
+      }
+
+      .footer {
+          padding: 30px;
+          padding-top: 60px;
+      }
+
+      .footer .copyright {
+          line-height: 1.6;
+          color: #545E6C;
+          font-size: 13px;
+      }
+
+      .footer .fa-heart {
+          color: #fb866a;
+      }
+
+      @media (max-width: 767.98px) {
+          .sidebar-wrapper {
+              position: static;
+              width: inherit;
+          }
+
+          .main-wrapper {
+              padding: 30px;
+          }
+
+          .main-wrapper .time {
+              position: static;
+              display: block;
+              margin-top: 5px;
+          }
+
+          .main-wrapper .upper-row {
+              margin-bottom: 0;
+          }
+      }
+
+      @media (min-width: 992px) {
+          .skillset .level-title {
+              display: inline-block;
+              float: left;
+              width: 30%;
+              margin-bottom: 0;
+          }
+      }
+
+  </style>
 </head>
 
 <body>
@@ -61,14 +480,27 @@
           The app was built using Flutter, and for the backend I decided to go for a serverless approach using the
           firebase functions.
         </div>
+        <div>
+          <div class="chip">Flutter</div>
+          <div class="chip">Firebase Functions</div>
+        </div>
       </div>
       <br>
       <div class="item">
         <div class="project-title">Sentiment Analysis for recorded team meetings</div>
         <div class="project-tagline">Dashboard built using Angular where you can upload a recorded meeting which will
+          then
           trigger the backend to analyse the sentiment in call.
           The backend is built in Python with OpenCV computer vision capabilities coupled with
           an AI Model to extract the faces and analyse the sentiment.
+        </div>
+        <div>
+          <div class="chip">Python</div>
+          <div class="chip">Firebase Functions</div>
+          <div class="chip">Angular</div>
+          <div class="chip">OpenCV</div>
+          <div class="chip">AI/ML</div>
+          <div class="chip">GCloud</div>
         </div>
       </div>
     </div>
@@ -76,13 +508,16 @@
   <div class="main-wrapper">
     <section class="hero">
       <h1>PAVEL RACU</h1>
-      <h2>Backend Engineer. Scrum Enthusiast</h2>
+      <h2>Software Engineer. Scrum Enthusiast</h2>
       <div class="description">
         <p>I had my first contact with programming while I was in Civil Engineering course where I learned Pascal. In
           April 2016 I enrolled in the Academia de Codigo's Programming Bootcamp where I learned the fundamental
           object-oriented programming concepts using Java. Since then, I worked as a C++ and Java software engineer
-          mainly focusing on the backend part of the applications. I am currently leading a team of 11 developers as
-          their scrum master and tech lead. I enjoy helping others to grow, and have given several training sessions on
+          mainly focusing on the backend part of the applications. In the recent years I started exploring serverless
+          computing with python and machine learning. <br>
+          In my spare time I am working on a computer vision project that takes a video stream of a meeting and analyzes the
+          facial expressions of all participants. <br>I enjoy helping others to grow, and have given several training
+          sessions on
           git, scrum, java and microservice architecture. My hobbies include playing for a live audience, building
           guitar effect pedals and amplifiers and playing chess.</p>
       </div>
@@ -92,7 +527,7 @@
       <div class="experience-item">
         <div class="meta">
           <div class="upper-row">
-            <h3 class="job-title">Backend Engineer</h3>
+            <h3 class="job-title">Software Engineer</h3>
             <div class="time">Jan 2022 - Jul 2022</div>
           </div><!--//upper-row-->
           <div class="company">Potential Project, Remote</div>
@@ -100,7 +535,8 @@
         <div class="experience-details">
           <p>Responsible for the backend side of a meditation app, I designed and implemented the API according to the
             business needs. I also worked closely with the product owner in helping to define the overall development
-            lifecycle process and the sprint refinement and planning sessions.
+            lifecycle process and the sprint refinement and planning sessions along with the application release
+            strategy and architecture.
           </p>
           <div class="skills-container">
             <div class="chip">JavaScript</div>
@@ -128,6 +564,7 @@
             <div class="chip">Java EE</div>
             <div class="chip">Jenkins</div>
             <div class="chip">Angular</div>
+            <div class="chip">Micro-services</div>
           </div>
         </div>
       </div>
@@ -140,7 +577,8 @@
           <div class="company">Critical Techworks</div>
         </div>
         <div class="experience-details">
-          <p>Worked with the Scrum Master to create a plan for the migration of the backend towards a microservice
+          <p>Worked with the Scrum Master and the development team to create a plan for the migration of the backend
+            towards a microservice
             architecture. Improved the local development environment to better reflect the production microservice
             architecture. Worked closely with the team to define a backend coding standard. Trained the team on git and
             implemented a new git workflow.</p>
@@ -148,6 +586,10 @@
             <div class="chip">Java EE</div>
             <div class="chip">Jenkins</div>
             <div class="chip">PostgresSQL</div>
+            <div class="chip">JUnit</div>
+            <div class="chip">Angular</div>
+            <div class="chip">Scrum</div>
+            <div class="chip">Micro-services</div>
           </div>
         </div>
       </div>
@@ -219,4 +661,5 @@
 </div>
 
 </body>
-</html> 
+</html>
+
